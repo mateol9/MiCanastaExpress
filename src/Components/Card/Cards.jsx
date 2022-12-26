@@ -50,7 +50,7 @@ function Cards() {
             <Card.Text>
               {data.precio}
             </Card.Text>
-            <Button variant="primary">buy now</Button>
+            <Button variant="outline-primary" style={{alignContent: 'center'}}>buy now</Button>
           </Card.Body>
         </Card>
         </SwiperSlide>
