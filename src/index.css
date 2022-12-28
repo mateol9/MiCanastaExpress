@@ -25,13 +25,13 @@
 }
 
 .fontStyleInter{
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
 }
 
 .fontStyleJost{
-  font-family: Jost;
+  font-family: 'Jost', sans-serif;
 }
 
 .fontStylePlayfair{
-  font-family: Playfair-Display;
+  font-family: 'Playfair Display', serif;
 }
