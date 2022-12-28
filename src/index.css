@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Regular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Bold.otf');
+  font-weight: 700;
+}
+
+.fontStyleNeurial{
+  font-family: Neurial-Grotesk;
+}
+
+.fontStyleInter{
+  font-family: Inter;
+}
+
+.fontStyleJost{
+  font-family: Jost;
+}
+
+.fontStylePlayfair{
+  font-family: Playfair-Display;
+}
