@@ -35,3 +35,7 @@
 .fontStylePlayfair{
   font-family: 'Playfair Display', serif;
 }
+
+.customShadow{
+  box-shadow: 0px 7.47897px 13.5981px rgba(0, 0, 0, 0.21);
+}
