@@ -1,6 +1,16 @@
 *{
     font-family: louis;
 }
+#navBar{
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    display: flex;
+    height: 100px;
+    width: 500px;
+    justify-content: center;
+    color: #000
+}
 body{
     background-color: #FFF5EC; 
 }

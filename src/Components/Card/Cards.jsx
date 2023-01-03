@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import CardGroup from 'react-bootstrap/CardGroup';
 import { useState, useEffect } from 'react';
@@ -33,7 +34,7 @@ function Cards() {
     <>
     <h2 className='Hcard'>SURPRISE BREAKFAST</h2>
     <Swiper
-      spaceBetween={5}
+      spaceBetween={10}
       slidesPerView={5}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
@@ -41,7 +42,7 @@ function Cards() {
       { info.map((data) =>{
 
         return(
-          
+          <Container fluid>
           <SwiperSlide>
           <Card key={data.id} style={{ textAlign: 'center', width: '12rem', height: '18rem'}}>
           <Card.Img variant="top" src={data.imagen} style={{ width: '8rem', height: '8rem', alignSelf: 'center'}} />
@@ -54,6 +55,7 @@ function Cards() {
           </Card.Body>
         </Card>
         </SwiperSlide>
+        </Container>
       )})
       }
     </Swiper>
