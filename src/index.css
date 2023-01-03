@@ -1,3 +1,28 @@
+*{
+    font-family: louis;
+}
 body{
     background-color: #FFF5EC; 
+}
+.Hcard{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: #EB596E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.titleBouquetes{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: #EB596E;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
