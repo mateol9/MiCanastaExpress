@@ -1,4 +1,4 @@
-import bg from '../../assets/bgus.png';
+import bg from '../../assets/bgsub.jpg';
 import { BsFacebook, BsWhatsapp, BsInstagram } from 'react-icons/bs';
 
 const Subscribe = () => {
