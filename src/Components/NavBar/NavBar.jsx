@@ -26,7 +26,7 @@ function NavBar() {
             <Nav.Link href="#" disabled>ON US</Nav.Link>
           </Nav>
           <a
-            href='http://www.facebook.com'
+            href='https://www.facebook.com/profile.php?id=100083066395537'
           >
           <Card.Img variant="top" src="https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/rrss%2Ffacebook.svg?alt=media&token=f1d8628c-c89c-469d-a105-fadd1eb7d88e" style={{ width: '1rem', height: '1rem', alignSelf: 'center', margin: "10px"}} />
           </a>
