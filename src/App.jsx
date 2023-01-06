@@ -1,9 +1,12 @@
-import NavBar from './Components/NavBar/NavBar'
-import Cards from './Components/Card/Cards'
-import CarouselBanner from './Components/Carousel/Carousel';
-import CardBouquetes from './Components/CardBouquetes/CardBouquetes';
-import CardCorp from './Components/CardCorp/CardCorp';
-
+import Footer from './components/Footer/Footer';
+import PayMethods from './components/PayMethods/PayMethods';
+import Subscribe from './components/Subscribe/Subscribe';
+import Us from './components/Us/Us';
+import CarouselBanner from './components/Carousel/Carousel'
+import NavBar from './components/NavBar/NavBar';
+import Cards from './components/Card/Cards';
+import CardBouquetes from './components/CardBouquetes/CardBouquetes'
+import CardCorp from './components/CardCorp/CardCorp'
 function App() {
 	return (
 		<div className='App'>
@@ -12,6 +15,10 @@ function App() {
 			<Cards/>
 			<CardBouquetes/>
 			<CardCorp/>
+			<Us />
+			<PayMethods />
+			<Subscribe />
+			<Footer />
 		</div>
 	);
 }

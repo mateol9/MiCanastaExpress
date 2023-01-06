@@ -63,7 +63,7 @@ function CardCorp() {
         return(
           
           <SwiperSlide key={data.id}>
-          <Card  style={{ textAlign: 'center', width: '12rem', height: '18rem'}}>
+          <Card  style={{ textAlign: 'center', width: '12rem', height: '18rem', marginBottom: '8rem'}}>
           <Card.Img variant="top" src={data.imagen} style={{ width: '8rem', height: '8rem', alignSelf: 'center'}} />
           <Card.Body>
             <Card.Title>{data.titulo}</Card.Title>

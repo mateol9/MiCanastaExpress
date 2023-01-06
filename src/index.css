@@ -1,44 +1,87 @@
-*{
-    font-family: louis;
-}
 #navBar{
-    align-items: center;
-    text-align: center;
-    margin-left: 100px;
-    display: flex;
-    height: 100px;
-    width: 500px;
-    justify-content: center;
-    color: #000
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
+  display: flex;
+  height: 100px;
+  width: 500px;
+  justify-content: center;
+  color: #000;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Regular.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Neurial-Grotesk;
+  src: url('./assets/fonts/NeurialGrotesk-Bold.otf');
+  font-weight: 700;
+}
+
+.fontStyleNeurial{
+  font-family: Neurial-Grotesk;
+}
+
+.fontStyleInter{
+  font-family: 'Inter', sans-serif;
+}
+
+.fontStyleJost{
+  font-family: 'Jost', sans-serif;
+}
+
+.fontStylePlayfair{
+  font-family: 'Playfair Display', serif;
+}
+
+.customShadow{
+  box-shadow: 0px 7.47897px 13.5981px rgba(0, 0, 0, 0.21);
+}
+*{
+  font-family: louis;
+}
+
 .logoNav{
-    position: fixed ;
-    max-width: 200px;
-    margin-top: 40px;
-    box-shadow: 20px;
-  }
+  position: fixed ;
+  max-width: 200px;
+  margin-top: 40px;
+  box-shadow: 20px;
+}
 body{
-    background-color: #FFF5EC; 
+  background-color: #FFF5EC; 
 }
 .Hcard{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    text-align: center;
-    color: #EB596E;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #EB596E;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .titleBouquetes{
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    text-align: center;
-    color: #EB596E;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #EB596E;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
