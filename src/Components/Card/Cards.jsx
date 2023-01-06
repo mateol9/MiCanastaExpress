@@ -33,21 +33,42 @@ function Cards() {
   return (
     <>
     <h2 className='Hcard'>SURPRISE BREAKFAST</h2>
+    <Container fluid>
     <Swiper
-      spaceBetween={10}
-      slidesPerView={5}
+      breakpoints={{
+        385: {
+          width: 385,
+          slidesPerView: 2
+        },
+        446: {
+          width: 446,
+          slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        640: {
+          width: 640,
+          slidesPerView: 3,
+        },
+        // when window width is >= 768px
+        987: {
+          width: 987,
+          slidesPerView: 5,
+        },
+      }}
+      spaceBetween={1}
+      slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
       { info.map((data) =>{
 
         return(
-          <Container fluid>
-          <SwiperSlide>
-          <Card key={data.id} style={{ textAlign: 'center', width: '12rem', height: '18rem'}}>
-          <Card.Img variant="top" src={data.imagen} style={{ width: '8rem', height: '8rem', alignSelf: 'center'}} />
+          
+          <SwiperSlide key={data.id}>
+          <Card  style={{ textAlign: 'center', width: '12rem', height: '18rem'}}>
+          <Card.Img variant="top" src={data.imagen} style={{ width: '7rem', height: '7rem', alignSelf: 'center'}} />
           <Card.Body>
-            <Card.Title>{data.titulo}</Card.Title>
+            <Card.Text>{data.titulo}</Card.Text>
             <Card.Text>
               ${data.precio}
             </Card.Text>
@@ -55,10 +76,11 @@ function Cards() {
           </Card.Body>
         </Card>
         </SwiperSlide>
-        </Container>
+        
       )})
       }
     </Swiper>
+    </Container>
     </>
   );
 }

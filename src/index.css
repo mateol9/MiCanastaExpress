@@ -11,6 +11,12 @@
     justify-content: center;
     color: #000
 }
+.logoNav{
+    position: fixed ;
+    max-width: 200px;
+    margin-top: 40px;
+    box-shadow: 20px;
+  }
 body{
     background-color: #FFF5EC; 
 }
