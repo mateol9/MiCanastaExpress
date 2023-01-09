@@ -10,13 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
 
 
-function Cards() {
+function Cards(products) {
   const [info, setInfo] = useState([]);
 
   const getBreakFast = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() =>{
-        resolve(desayunos)
+        console.log(products)
+        resolve(products)
       }, 2000)
     })
   }
@@ -24,16 +25,16 @@ function Cards() {
   useEffect( () => {
    getBreakFast()
    .then((res) => {
-    setInfo(res)
+    setInfo(res.products)
+
    }) 
     
   }, [])
 
 
   return (
-    <>
-    <h2 className='Hcard'>SURPRISE BREAKFAST</h2>
-    <Container fluid>
+    
+    <Container fluid style={{marginBottom: '150px'}}>
     <Swiper
       breakpoints={{
         385: {
@@ -81,7 +82,7 @@ function Cards() {
       }
     </Swiper>
     </Container>
-    </>
+    
   );
 }
 
