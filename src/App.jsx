@@ -1,13 +1,15 @@
-import Footer from './components/Footer/Footer.jsx';
-import PayMethods from './components/PayMethods/PayMethods.jsx';
-import Subscribe from './components/Subscribe/Subscribe';
-import Us from './components/Us/Us';
+
 import CarouselBanner from './components/Carousel/Carousel'
 import NavBar from './components/NavBar/NavBar';
 import Cards from './components/Card/Cards';
 import desayunos from './Utils/DesayunosMocks.js';
 import bouquetes from './Utils/BouquetesMocks.js';
 import corporativos from './Utils/CorporativosMocks.js';
+import PayMethods from './components/PayMethods/PayMethods';
+import Subscribe from './components/Subscribe/Subscribe';
+import Us from './components/Us/Us';
+import Footer from './components/Footer/Footer'
+
 
 function App() {
 	return (

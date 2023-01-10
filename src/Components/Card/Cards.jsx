@@ -1,12 +1,6 @@
-import Card from 'react-bootstrap/Card';
-import { Container } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import CardGroup from 'react-bootstrap/CardGroup';
+import { Card } from 'flowbite-react';
 import { useState, useEffect } from 'react';
-import desayunos from '../../Utils/DesayunosMocks';
-import Carousel from 'react-bootstrap/Carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
 
 
@@ -34,7 +28,7 @@ function Cards(products) {
 
   return (
     
-    <Container fluid style={{marginBottom: '150px'}}>
+    
     <Swiper
       breakpoints={{
         385: {
@@ -66,22 +60,38 @@ function Cards(products) {
         return(
           
           <SwiperSlide key={data.id}>
-          <Card  style={{ textAlign: 'center', width: '12rem', height: '18rem'}}>
-          <Card.Img variant="top" src={data.imagen} style={{ width: '7rem', height: '7rem', alignSelf: 'center'}} />
-          <Card.Body>
-            <Card.Text>{data.titulo}</Card.Text>
-            <Card.Text>
-              ${data.precio}
-            </Card.Text>
-            <Button variant="outline-primary" style={{alignContent: 'center'}}>buy now</Button>
-          </Card.Body>
-        </Card>
+            <div className="max-w-sm">
+                <Card>
+                  <img
+                    className="imgCard"
+                    src={data.imagen}
+                    alt={data.titulo}
+                  />
+                  <a href="#">
+                    <h5 className="text-xl tracking-tight text-gray-900 dark:text-white text-center">
+                    {data.titulo}
+                    </h5>
+                  </a>
+                    <h5 className="text-3xl text-gray-900 dark:text-white text-center">
+                      ${data.precio}
+                    </h5>
+                  <div className="flex items-center justify-center">
+                    <a
+                      href="#"
+                      className="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                    >
+                      Add to cart
+                    </a>
+                  </div>
+                </Card>
+              </div>
+
         </SwiperSlide>
         
       )})
       }
     </Swiper>
-    </Container>
+
     
   );
 }

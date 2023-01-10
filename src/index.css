@@ -87,3 +87,8 @@ body{
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.imgCard{
+  height: 7rem;
+  width: 7rem;
+  align-self: center;
+}
