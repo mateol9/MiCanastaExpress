@@ -61,7 +61,7 @@ function Cards(products) {
           
           <SwiperSlide key={data.id}>
             <div className="max-w-sm">
-                <Card>
+                <Card style={{ width: '200px', height: '350px' }}>
                   <img
                     className="imgCard"
                     src={data.imagen}

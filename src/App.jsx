@@ -9,6 +9,8 @@ import PayMethods from './components/PayMethods/PayMethods';
 import Subscribe from './components/Subscribe/Subscribe';
 import Us from './components/Us/Us';
 import Footer from './components/Footer/Footer'
+import './index.css'
+
 
 
 function App() {
