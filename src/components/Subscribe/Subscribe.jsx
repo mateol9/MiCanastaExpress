@@ -82,19 +82,25 @@ const Subscribe = () => {
 				</form>
 				<div className='flex text-white gap-2 sm:gap-7 text-xl sm:text-2xl md:text-3xl lg:text-4xl'>
 					<a
-						href='#'
+						href='https://www.facebook.com/profile.php?id=100083066395537'
+						target='_blank'
+						rel='noreferrer'
 						className='hover:text-[#4267B2] p-2 hover:bg-white hover:p-2 rounded-full'
 					>
 						<BsFacebook />
 					</a>
 					<a
-						href='#'
+						href='https://api.whatsapp.com/send?phone=13058146416'
+						target='_blank'
+						rel='noreferrer'
 						className='hover:text-[#075e54] p-2 hover:bg-white hover:p-2 rounded-full'
 					>
 						<BsWhatsapp />
 					</a>
 					<a
-						href='#'
+						href='https://www.instagram.com/micanastaexpress/'
+						target='_blank'
+						rel='noreferrer'
 						className='hover:text-[#fa7e1e] p-2 hover:bg-white hover:p-2 rounded-full'
 					>
 						<BsInstagram />

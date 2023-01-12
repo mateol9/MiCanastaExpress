@@ -1,6 +1,10 @@
 import deluxe from '../../assets/deluxe.png';
+import { useRef } from 'react';
 
 const Detail = () => {
+	const productId = useRef();
+	console.log(productId);
+
 	return (
 		<div className='bg-[#FFF5EC] flex flex-col justify-center lg:flex-row px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-12 sm:py-14 md:py-16 lg:py-18 gap-4 sm:gap-6 md:gap-9 lg:gap-12 xl:gap-16'>
 			<div className='flex justify-center lg:block'>
@@ -34,9 +38,14 @@ const Detail = () => {
 					</ul>
 				</div>
 				<div className='flex justify-center items-center'>
-					<button className='px-16 md:px-20 lg:px-24 py-2 sm:py-3 lg:py-4 bg-[#007994] rounded-full text-white text-[9px] md:text-[14px] lg:text-[19px] border-2 border-[#007994] hover:bg-[#FFF5EC] hover:text-[#007994] font-bold'>
+					<a
+						href='https://api.whatsapp.com/send?phone=13058146416'
+						target='_blank'
+						rel='noreferrer'
+						className='px-16 md:px-20 lg:px-24 py-2 sm:py-3 lg:py-4 bg-[#007994] rounded-full text-white text-[9px] md:text-[14px] lg:text-[19px] border-2 border-[#007994] hover:bg-[#FFF5EC] hover:text-[#007994] font-bold'
+					>
 						BUY NOW
-					</button>
+					</a>
 				</div>
 			</div>
 		</div>

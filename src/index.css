@@ -39,3 +39,51 @@
 .customShadow{
   box-shadow: 0px 7.47897px 13.5981px rgba(0, 0, 0, 0.21);
 }
+
+#navBar{
+  align-items: center;
+  text-align: center;
+  margin-left: 100px;
+  display: flex;
+  height: 100px;
+  width: 500px;
+  justify-content: center;
+  color: #000;
+}
+
+.logoNav{
+  position: fixed ;
+  max-width: 200px;
+  margin-top: 40px;
+  box-shadow: 20px;
+}
+body{
+  background-color: #FFF5EC; 
+}
+.Hcard{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #EB596E;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.titleBouquetes{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  text-align: center;
+  color: #EB596E;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.imgCard{
+  height: 7rem;
+  width: 7rem;
+  align-self: center;
+}
