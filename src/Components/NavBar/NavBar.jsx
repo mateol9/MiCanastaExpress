@@ -5,7 +5,7 @@ import '../../index.css';
 function NavBar() {
 	return (
 		<Navbar fluid={true} rounded={true}>
-			<Navbar.Brand>
+			<Navbar.Brand href='/'>
 				<img
 					src='https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/logo%2FLOGO%20PRINCIPAL.png?alt=media&token=398018ef-a6aa-49bc-9dd2-e93183b9c0a5'
 					className='mr-3 h-30 sm:h-30'
@@ -71,10 +71,8 @@ function NavBar() {
 				<Navbar.Link href='#bouquets'>
 					FLOWER BOUQUETS AND CHOCOLATES
 				</Navbar.Link>
-				<Navbar.Link href='#action2'>CORPORATE AND EVENTS</Navbar.Link>
-				<Navbar.Link href='#' disabled>
-					ON US
-				</Navbar.Link>
+				<Navbar.Link href='#corps'>CORPORATE AND EVENTS</Navbar.Link>
+				<Navbar.Link href='#usSection'>ON US</Navbar.Link>
 			</Navbar.Collapse>
 		</Navbar>
 	);
