@@ -1,30 +1,47 @@
-import { Navbar } from 'flowbite-react';
+import Carousel from './components/Carousel/Carousel';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DetailPage from './components/DetailPage/DetailPage';
+import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
+import PayMethods from './components/PayMethods/PayMethods';
+import Subscribe from './components/Subscribe/Subscribe';
+import Us from './components/Us/Us';
+import Cards from './components/Card/Cards';
+import desayunos from './utils/DesayunosMocks.js';
+import bouquetes from './utils/BouquetesMocks.js';
+import corporativos from './utils/CorporativosMocks.js';
 
 function App() {
 	return (
 		<div className='App'>
-			<Navbar fluid={true} rounded={true}>
-				<Navbar.Brand href='https://flowbite.com/'>
-					<img
-						src='https://flowbite.com/docs/images/logo.svg'
-						className='mr-3 h-6 sm:h-9'
-						alt='Flowbite Logo'
+			<BrowserRouter>
+				<NavBar />
+				<Routes>
+					<Route
+						path='/'
+						element={
+							<>
+								<Carousel />
+								<h2 className='titleBouquetes' id='surpriceBreakfast'>
+									SURPRISE BREAKFAST
+								</h2>
+								<Cards products={desayunos} />
+								<h2 className='titleBouquetes' id='bouquets'>
+									BOUQUETS OF FLOWERS AND CHOCOLATES
+								</h2>
+								<Cards products={bouquetes} />
+								<h2 className='titleBouquetes'>CORPORATE AND EVENTS</h2>
+								<Cards products={corporativos} />
+								<Us />
+								<PayMethods />
+								<Subscribe />
+							</>
+						}
 					/>
-					<span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
-						Mi Canasta Express
-					</span>
-				</Navbar.Brand>
-				<Navbar.Toggle />
-				<Navbar.Collapse>
-					<Navbar.Link href='/navbars' active={true}>
-						Home
-					</Navbar.Link>
-					<Navbar.Link href='/navbars'>About</Navbar.Link>
-					<Navbar.Link href='/navbars'>Services</Navbar.Link>
-					<Navbar.Link href='/navbars'>Pricing</Navbar.Link>
-					<Navbar.Link href='/navbars'>Contact</Navbar.Link>
-				</Navbar.Collapse>
-			</Navbar>
+					<Route path='/detail/:titulo' element={<DetailPage />} />
+				</Routes>
+				<Footer />
+			</BrowserRouter>
 		</div>
 	);
 }
