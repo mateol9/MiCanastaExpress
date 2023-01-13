@@ -1,30 +1,38 @@
-import { useState, useEffect } from 'react';
+import deluxe from '../../assets/deluxe.png';
+import { useRef, useState, useEffect } from 'react';
 import desayunos from '../../utils/DesayunosMocks';
 import bouquetes from '../../utils/BouquetesMocks';
 import corporativos from '../../utils/CorporativosMocks';
 import { useParams } from 'react-router-dom';
 
+
+
 const Detail = () => {
-	const [product, setProduct] = useState([]);
-	const { titulo } = useParams();
+	const [ product, setProduct ] = useState([])
+    const { titulo } = useParams()
 	const products = [];
+	const description = [];
+	
+	
 	desayunos.map((breakFast) => {
-		products.push(breakFast);
-	});
+		products.push(breakFast)
+	})
 	bouquetes.map((bouquete) => {
-		products.push(bouquete);
-	});
+		products.push(bouquete)
+	})
 	corporativos.map((corporate) => {
-		products.push(corporate);
-	});
+		products.push(corporate)
+	})
 
 	const getBreakFast = () => {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
-				const productFilter = products.find((producto) => {
-					return producto.titulo == titulo;
-				});
-
+				const productFilter = products.find( (producto) => {
+					
+					return producto.titulo == titulo
+				
+				})
+				
 				resolve(productFilter);
 			}, 2000);
 		});
@@ -35,6 +43,8 @@ const Detail = () => {
 			setProduct(res);
 		});
 	}, []);
+
+	description.push(...product.descripcion)
 
 	return (
 		<div className='bg-[#FFF5EC] flex flex-col justify-center lg:flex-row px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-12 sm:py-14 md:py-16 lg:py-18 gap-4 sm:gap-6 md:gap-9 lg:gap-12 xl:gap-16'>
@@ -58,15 +68,22 @@ const Detail = () => {
 						CONTENT
 					</p>
 					<ul className='list-disc  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] xl:text-[26px] ml-5 flex flex-col gap-2 uppercase'>
-						{/* {product?.descripcion.map((item, index) => (
-							<li key={index}>{item}</li>
-						))} */}
-						<li>{product.descripcion}</li>
+						{console.log(description)}
+						{//reemplazar por product.descripcion.map()
+						
+						description.map((item) => {
+							return(
+							<li key={item}>{item}</li>
+							)
+						})
+
+						}
+
 					</ul>
 				</div>
 				<div className='flex justify-center items-center'>
 					<a
-						href='https://api.whatsapp.com/send?phone=13058146416'
+						href={`https://api.whatsapp.com/send?phone=13058146416&text=Hi!%20I%20am%20interested%20in%20this%20article%20${product.titulo}`}
 						target='_blank'
 						rel='noreferrer'
 						className='px-16 md:px-20 lg:px-24 py-2 sm:py-3 lg:py-4 bg-[#007994] rounded-full text-white text-[9px] md:text-[14px] lg:text-[19px] border-2 border-[#007994] hover:bg-[#FFF5EC] hover:text-[#007994] font-bold'

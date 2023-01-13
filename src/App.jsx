@@ -30,9 +30,7 @@ function App() {
 									BOUQUETS OF FLOWERS AND CHOCOLATES
 								</h2>
 								<Cards products={bouquetes} />
-								<h2 className='titleBouquetes' id='corps'>
-									CORPORATE AND EVENTS
-								</h2>
+								<h2 className='titleBouquetes'>CORPORATE AND EVENTS</h2>
 								<Cards products={corporativos} />
 								<Us />
 								<PayMethods />

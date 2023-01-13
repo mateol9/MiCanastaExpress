@@ -3,10 +3,7 @@ import bg from '../../assets/bgus.png';
 
 const Us = () => {
 	return (
-		<div
-			className='lg:h-screen flex flex-col lg:flex-row bg-[#FEFEFE]'
-			id='usSection'
-		>
+		<div className='lg:h-screen flex flex-col lg:flex-row bg-[#FEFEFE]'>
 			<div
 				style={{ backgroundImage: `url(${bg})` }}
 				className='bg-[#006C84] text-center px-9 pt-12 pb-28 md:px-16 md:pt-20 md:pb-36 lg:p-0 w-full lg:w-2/3 flex flex-col justify-center items-center'

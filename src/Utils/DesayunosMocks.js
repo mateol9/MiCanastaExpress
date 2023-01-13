@@ -1,21 +1,12 @@
 const desayunos = [
-	// mock de lo que responde el back-end
+	//mock de lo que responde el back-end
 	{
 		id: 1,
 		titulo: 'DELUXE LOVE TRAY',
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20LOVE%20TRAY.jpg?alt=media&token=613ebced-b072-4b66-9e86-001e679fa78f',
-		descripcion: [
-			'BOTELLA DE VINO EN UN BUCKET DE ALUMINIO',
-			'COPAS DE VINO X 2',
-			'PORTARETRATO Y UN MUG',
-			'YOGURT CON CEREAL',
-			'ARREGLO DE ROSAS',
-			'BANDEJA DE MADERA DECORADA CON MANTEL Y TARJETA',
-			'5 GLOBOS METÁLICOS CON HELIO',
-		],
-
+		descripcion: ['BOTELLA DE VINO EN UN BUCKET DE ALUMINIO', 'COPAS DE VINO X 2', 'PORTARETRATO Y UN MUG', 'YOGURT CON CEREAL', 'ARREGLO DE ROSAS', 'BANDEJA DE MADERA DECORADA CON MANTEL Y TARJETA', '5 GLOBOS METÁLICOS CON HELIO'],
 		categoria: 'Express-Breakfast',
 	},
 	{
@@ -262,8 +253,7 @@ const desayunos = [
 		id: 12,
 		titulo: 'ESPECIAL MOMENTS TEENS',
 		precio: 89.99,
-		imagen:
-			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20TEENS%20EXPRESS%202.jpg?alt=media&token=6d08de17-c929-4f26-877f-14f5bf0ee44d',
+		imagen: 'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20TEENS%20EXPRESS%202.jpg?alt=media&token=6d08de17-c929-4f26-877f-14f5bf0ee44d',
 		descripcion: `SANDUCHE DE JAMÓN Y QUESO
       JUGO DE NARANJA
       
