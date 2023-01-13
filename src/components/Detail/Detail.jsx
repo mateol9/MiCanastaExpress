@@ -11,9 +11,9 @@ const Detail = () => {
 	const [ product, setProduct ] = useState([])
     const { titulo } = useParams()
 	const products = [];
-	const description = [];
+	const [description, setDescription ] = useState([])
 	
-	
+
 	desayunos.map((breakFast) => {
 		products.push(breakFast)
 	})
@@ -41,10 +41,11 @@ const Detail = () => {
 	useEffect(() => {
 		getBreakFast().then((res) => {
 			setProduct(res);
+			setDescription(res.descripcion)
 		});
 	}, []);
 
-	description.push(...product.descripcion)
+	
 
 	return (
 		<div className='bg-[#FFF5EC] flex flex-col justify-center lg:flex-row px-6 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-12 sm:py-14 md:py-16 lg:py-18 gap-4 sm:gap-6 md:gap-9 lg:gap-12 xl:gap-16'>
@@ -68,15 +69,13 @@ const Detail = () => {
 						CONTENT
 					</p>
 					<ul className='list-disc  text-[14px] sm:text-[16px] md:text-[18px] lg:text-[24px] xl:text-[26px] ml-5 flex flex-col gap-2 uppercase'>
-						{console.log(description)}
-						{//reemplazar por product.descripcion.map()
-						
+					
+						{
 						description.map((item) => {
 							return(
 							<li key={item}>{item}</li>
 							)
 						})
-
 						}
 
 					</ul>

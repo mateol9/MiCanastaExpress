@@ -1,12 +1,21 @@
 const desayunos = [
-	//mock de lo que responde el back-end
+	// mock de lo que responde el back-end
 	{
 		id: 1,
 		titulo: 'DELUXE LOVE TRAY',
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20LOVE%20TRAY.jpg?alt=media&token=613ebced-b072-4b66-9e86-001e679fa78f',
-		descripcion: ['BOTELLA DE VINO EN UN BUCKET DE ALUMINIO', 'COPAS DE VINO X 2', 'PORTARETRATO Y UN MUG', 'YOGURT CON CEREAL', 'ARREGLO DE ROSAS', 'BANDEJA DE MADERA DECORADA CON MANTEL Y TARJETA', '5 GLOBOS METÁLICOS CON HELIO'],
+		descripcion: [
+			'BOTTLE OF WINE IN AN ALUMINUM BUCKET',
+			'WINE GLASSES X 2',
+			'PORTRAIT AND A MUG',
+			'YOGURT WITH CEREAL',
+			'ARRANGEMENT OF ROSES',
+			'WOODEN TRAY DECORATED WITH TABLECLOTH AND CARD',
+			'5 METALLIC BALLOONS WITH HELIUM',
+		],
+
 		categoria: 'Express-Breakfast',
 	},
 	{
@@ -15,16 +24,18 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/SWEET%20LOVE%20TRAY.jpg?alt=media&token=350f4026-7dc9-440e-ae0d-71bdffd7f902',
-		descripcion: `BANDEJA DE CRYSTAL
-      MINI CHAMPAGNE
-      NUTELLA O STRARBUCKS CAFÉ
-      PANCAKE X 4 CON FRESAS
-      PORTARETRATO
-      YOGURT CON GRANOLA
-      JUGO DE NARANJA
-      GALLETAS
-      FERRERO ROCHER CHOCOLATE
-      5 GLOBOS METÁLICOS CON HELIO`,
+		descripcion: [
+			'GLASS TRAY',
+			'MINI CHAMPAGNE',
+			'NUTELLA OR STRARBUCKS COFFEE',
+			'PANCAKE X 4 WITH STRAWBERRIES',
+			'PORTRAIT DOOR',
+			'YOGURT WITH GRANOLA',
+			'ORANGE JUICE',
+			'BISCUITS',
+			'FERRERO ROCHER CHOCOLATE',
+			'5 METALLIC BALLOONS WITH HELIUM',
+		],
 		categoria: 'Express-Breakfast',
 	},
 	{
@@ -33,19 +44,20 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/SWEET%20TRAY.jpg?alt=media&token=c81d6b0b-801a-48ce-a077-e8561fc41250',
-		descripcion: `BANDEJA DE MADERA
-      ARCO DE GLOBOS
-      MINI BOUQUET DE FLORES
-      PARFAIT (CEREAL, YOGURT, FRESAS)
-      SÁNDWICH (JAMÓN, QUESO, MIX DE LECHUGAS,
-      TOMATE) O (WAFFLES CON FRUTAS Y SYRUP)
-      MINI NUTELLA
-      CHOCOLATES
-      FRUTOS SECOS
-      JUGO DE NARANJA
-      COPA MARCADA
-      CAFÉ STARBUCKS
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'WOODEN TRAY',
+			'BOW OF BALLOONS',
+			'MINI BOUQUET OF FLOWERS',
+			'PARFAIT (CEREAL, YOGURT, STRAWBERRIES)',
+			'SANDWICH (HAM, CHEESE, MIXED LETTUCE, TOMATO) OR (WAFFLES WITH FRUIT AND SYRUP)',
+			'MINI NUTELLA',
+			'CHOCOLATES',
+			'NUTS',
+			'ORANGE JUICE',
+			'MARKED CUP',
+			'STARBUCKS COFFEE',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Love-Tray',
 	},
 	{
@@ -54,25 +66,24 @@ const desayunos = [
 		precio: 149.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20CAKE%20TRAY%201.jpg?alt=media&token=cbc6e701-6049-467f-b532-59b5af060e41',
-		descripcion: `TRAY DECORADA Y PERSONALIZADA
-      CON MENSAJE EN EL FONDO
-      MINI PROSECCO
-      JUGO DE NARANJA
-      COPA MARCADA
-      CAFÉ FRIO STARBUCKS
-      WAFFLES CON FRESAS Y ARÁNDANOS
-      SYRUP
-      NUTELLA
-      2 SÁNDWICH CLUB (JAMÓN, QUESO,
-      TOMÁTE, MIX DE LECHUGAS)
-      MINI CAKE
-      PARFAIT (YOGURT GRIEGO,FRESAS,
-      ARÁNDANOS, KIWI)
-      CHOCOLATES
-      BOUQUET DE FLORES
-      TARJETA
-      GLOBO BURBUJA X 1 O 4 GLOBOS
-      CON HELIO`,
+		descripcion: [
+			'DECORATED AND PERSONALIZED TRAY WITH MESSAGE IN THE BACKGROUND',
+			'MINI PROSECCO',
+			'ORANGE JUICE',
+			'MARKED CUP',
+			'STARBUCKS COLD COFFEE',
+			'WAFFLES WITH STRAWBERRIES AND BLUEBERRIES',
+			'SYRUP',
+			'NUTELLA',
+			'2 CLUB SANDWICH (HAM, CHEESE, TOMATE, MIX OF LETTUCE)',
+			'MINI CAKE',
+			'PARFAIT (GREEK YOGURT, STRAWBERRIES, BLUEBERRIES, KIWI)',
+			'CHOCOLATES',
+			'FLOWER BOUQUET',
+			'CARD',
+			'BUBBLE BALLOON X 1 OR 4 BALLOONS',
+			'WITH HELIUM',
+		],
 		categoria: 'Deluxe-Cake-Tray',
 	},
 	{
@@ -81,28 +92,22 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/ANIVERSARY%20TRAY%202.jpg?alt=media&token=f835a34e-26c4-47aa-963e-5b60539b8f40',
-		descripcion: `BANDEJA DE MADERA
-      ARCO DE GLOBOS
-      
-      MINI BOUQUET DE FLORES
-      
-      PARFAIT (CEREAL, YOGURT, FRESAS)
-      
-      SÁNDWICH (JAMÓN, QUESO, MIX DE LE-
-      CHUGAS, TOMATE) O (WAFFLES CON
-      
-      FRUTAS Y SYRUP)
-      MINI NUTELLA
-      CHOCOLATES
-      FRUTOS SECOS
-      JUGO DE NARANJA
-      COPA MARCADA
-      CAFÉ STARBUCKS
-      
-      TARJETA PERSONALIZADA
-      
-      FOTOGRAFÍAS
-      GLOBOS HELIO`,
+		descripcion: [
+			'WOODEN TRAY',
+			'BOW OF BALLOONS',
+			'MINI BOUQUET OF FLOWERS',
+			'PARFAIT (CEREAL, YOGURT, STRAWBERRIES)',
+			'SANDWICH (HAM, CHEESE, MIX OF LETTUCE, TOMATO) OR (WAFFLES WITH FRUITS AND SYRUP)',
+			'MINI NUTELLA',
+			'CHOCOLATES',
+			'NUTS',
+			'ORANGE JUICE',
+			'MARKED CUP',
+			'STARBUCKS COFFEE',
+			'PERSONALIZED CARD',
+			'PHOTOGRAPHS',
+			'HELIUM BALLOONS',
+		],
 		categoria: 'Luxury-Tray-Express',
 	},
 	{
@@ -111,18 +116,15 @@ const desayunos = [
 		precio: 149.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/CELEBRATION%20TRAY%202.jpg?alt=media&token=19aea308-98aa-4ba4-ac4d-b072d0228746',
-		descripcion: `MINI CAKE
-      BOTELLA GRANDE DE VINO O
-      
-      CHAMPAGNE
-      
-      DOS COPAS MARCADAS
-      BOX DE FRESAS DECORADAS
-      
-      BOUQUET DE FLORES
-      FERREROS X 6
-      
-      CHARCUTERÍA (PROSCIUTTO, QUESO)`,
+		descripcion: [
+			'MINI CAKE',
+			'LARGE BOTTLE OF WINE OR CHAMPAGNE',
+			'TWO MARKED GLASSES',
+			'BOX OF DECORATED STRAWBERRIES',
+			'FLOWER BOUQUET',
+			'FERREROS X 6',
+			'CHARCUTERY (PROSCIUTTO, CHEESE)',
+		],
 		categoria: 'Luxury-Tray-Express',
 	},
 	{
@@ -131,18 +133,16 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20MINI%20TRAY%201.jpg?alt=media&token=2250b7c8-209a-44aa-ac1e-6e8ec6b24416',
-		descripcion: `DELUXE MINI TRAY
-      SANDUCHE DE JAMÓN Y QUESO
-      
-      JUGO DE NARANJA
-      MINI BOUQUET DE FLORES
-      
-      FRUTAS
-      
-      MINI NUTELLA
-      BOUQUET DE GLOBOS
-      
-      MENSAJE Y TARJETA PERSONALIZADA`,
+		descripcion: [
+			'DELUXE MINI TRAY',
+			'HAM AND CHEESE SANDWICH',
+			'ORANGE JUICE',
+			'MINI BOUQUET OF FLOWERS',
+			'FRUITS',
+			'MINI NUTELLA',
+			'BALLOON BOUQUET',
+			'MESSAGE AND PERSONALIZED CARD',
+		],
 		categoria: 'Luxury-Tray-Express',
 	},
 	{
@@ -151,24 +151,16 @@ const desayunos = [
 		precio: 189.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/LOVE%20FOR%20TWO.jpg?alt=media&token=324e958e-cffa-42f1-a19b-84adefffe1a4',
-		descripcion: `WRAPS X 4 (JAMÓN Y QUESO, LECHUGA, TOMATE Y
-          SALSA DE LA CASA) Y MINI WAFFLES
-          
-          ENSALADA DE FRUTAS DOS MANZANA, FRESAS Y UVAS
-          
-          2 PREMIUM CAFÉ JUAN VALDEZ INSTANTANEO O CAFE
-          
-          STARBUCKS INSTANTANEO
-          
-          2 JUGOS DE NARANJA
-          
-          FERRERO ROCHER CHOCOLATES
-          
-          MINI CAJA CON ARREGLO DE 9 ROSAS
-          
-          2 POCILLOS, BANDEJA LARGA DECORADA CON MANTEL
-          
-          MOÑO, GLOBO BURBUJA Y TARJETA PERSONALIZADA`,
+		descripcion: [
+			'WRAPS X 4 (HAM AND CHEESE, LETTUCE, TOMATO AND HOUSE SAUCE) AND MINI WAFFLES',
+			'FRUIT SALAD TWO APPLE, STRAWBERRIES AND GRAPES',
+			'2 PREMIUM INSTANT JUAN VALDEZ COFFEE OR COFFEE',
+			'INSTANT STARBUCKS',
+			'2 ORANGE JUICES',
+			'FERRERO ROCHER CHOCOLATES',
+			'MINI BOX WITH ARRANGEMENT OF 9 ROSES',
+			'2 WELLS, LONG TRAY DECORATED WITH TABLECLOTH BOW, BUBBLE BALLOON AND PERSONALIZED CARD',
+		],
 		categoria: 'Luxury-Tray-Express',
 	},
 	{
@@ -177,18 +169,16 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/SWEET%20BURBUJA%201.jpg?alt=media&token=5605a4c7-4b5c-4f1b-8281-8ec29ddebf4b',
-		descripcion: `SANDUCHE DE JAMON Y QUESO
-      JUGO DE NARANJA O SANGRÍA
-      
-      BARQUILLOS
-      HERSHEY
-       ́
-      S CHOCOLATE
-      
-      GLOBO BURBUJA CON MENSAJE
-      BASE DE MADERA CON MANTEL
-      YOGURT
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'HAM AND CHEESE SANDWICH',
+			'ORANGE JUICE OR SANGRIA',
+			'WAFERS',
+			'HERSHEY´S CHOCOLATE',
+			'BUBBLE BALLOON WITH MESSAGE',
+			'WOODEN BASE WITH TABLECLOTH',
+			'YOGURT',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Kit-Burbuja-Express',
 	},
 	{
@@ -197,24 +187,17 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20MUGS%20BURBUJA.jpg?alt=media&token=878ee808-2b41-4399-b20e-1a704eb787ae',
-		descripcion: `BASE DE MADERA
-      JUGO DE NARANJA
-      
-      SANDUCHE DE JAMÓN Y QUESO
-      
-      YOGURT CON CEREAL
-      
-      POCILLO
-      
-      CAJITA DE MANGO O MANZANA
-      
-      BARQUILLO X 2
-      
-      GLOBOS PEQUEÑOS X 3, X 1
-      
-      BURBUJA
-      
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'WOOD BASE',
+			'ORANGE JUICE',
+			'HAM AND CHEESE SANDWICH',
+			'YOGURT WITH CEREAL',
+			'BUCKET',
+			'MANGO OR APPLE BOX',
+			'WAFER X 2',
+			'SMALL BALLOONS X 3, X 1 BUBBLE',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Kit-Burbuja-Express',
 	},
 	{
@@ -223,59 +206,39 @@ const desayunos = [
 		precio: 109.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20TEENS%20EXPRESS%201.jpg?alt=media&token=518f1e82-d8cb-48f9-9809-a62f2954469d',
-		descripcion: `BANDEJA DE MADERA CON ARCOIRIS DE
-      GLOBOS Y GLOBO BURBUJA X 1
-      
-      SANDUCHE DE JAMON Y QUESO
-      
-      CAJA DE BROWNIS
-      
-      JUGO DE NARANJA
-      
-      YOGURT CON CEREAL
-      
-      GALLETAS OREO
-      
-      MANZANA
-      
-      TAJERTA PERSONALIZADA
-      
-      GLOBO CON MENSAJE
-      
-      OPCIONAL BOTELLA DE VINO
-      
-      O HATSU TE
-      
-      2 FOTOS IMPRESAS`,
+		descripcion: [
+			'WOODEN TRAY WITH RAINBOW',
+			'BALLOONS AND BUBBLE BALLOON X 1',
+			'HAM AND CHEESE SANDWICH',
+			'BROWNIS BOX',
+			'ORANGE JUICE',
+			'YOGURT WITH CEREAL',
+			'OREO COOKIES',
+			'APPLE',
+			'PERSONALIZED CARD',
+			'BALLOON WITH MESSAGE',
+			'OPTIONAL BOTTLE OF WINE OR HATSUTE',
+			'2 PRINTED PHOTOS',
+		],
 		categoria: 'Teens',
 	},
 	{
 		id: 12,
 		titulo: 'ESPECIAL MOMENTS TEENS',
 		precio: 89.99,
-		imagen: 'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20TEENS%20EXPRESS%202.jpg?alt=media&token=6d08de17-c929-4f26-877f-14f5bf0ee44d',
-		descripcion: `SANDUCHE DE JAMÓN Y QUESO
-      JUGO DE NARANJA
-      
-      MINI PRINGLES
-      
-      FRUTAS
-      
-      MINI NUTELLA
-      
-      PIRULINES
-      
-      HATSU TE O BOTELLA DE VINO
-      
-      (OPCIONAL)
-      
-      BOUQUET DE GLOBOS
-      
-      MENSAJE
-      
-      TARJETA
-      
-      PERSONALIZADA`,
+		imagen:
+			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20TEENS%20EXPRESS%202.jpg?alt=media&token=6d08de17-c929-4f26-877f-14f5bf0ee44d',
+		descripcion: [
+			'HAM AND CHEESE SANDWICH',
+			'ORANGE JUICE',
+			'MINI PRINGLES',
+			'FRUITS',
+			'MINI NUTELLA',
+			'LOLLIPOPS',
+			'HATSU TEA OR BOTTLE OF WINE (OPTIONAL)',
+			'BALLOON BOUQUET',
+			'MESSAGE CARD CUSTOMIZED',
+		],
 		categoria: 'Teens',
 	},
 	{
@@ -284,24 +247,20 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/ESPECIAL%20THEME%20BIRTHDAY%201.jpg?alt=media&token=85be42d0-9c45-4a54-aa72-3a13fb880fba',
-		descripcion: `CANASTA DE MADERA
-      PERSONALIZADA TEMÁTICA
-      
-      FAVORITA ELEGIDA POR USTED
-      DOS GLOBOS TEMÁTICA
-      
-      FAVORITA
-      SANDUCHE DE JAMÓN Y QUESO
-      YOGURT CON CEREAL
-      VASO TEMÁTICO
-      KINDER SORPRESA
-      MANTEL
-      JUGO DE NARANJA
-      MINI PRINGLES
-      STICKERS TEMÁTICA
-      TARJETA CON MENSAJE
-      
-      PERSONALIZADO`,
+		descripcion: [
+			'WOODEN BASKET',
+			'THEMED CUSTOM FAVORITE CHOSEN BY YOU',
+			'TWO THEMED BALLOONS',
+			'FAVORITE HAM AND CHEESE SANDWICH',
+			'YOGURT WITH CEREAL',
+			'THEMATIC GLASS',
+			'KINDER SURPRISE',
+			'TABLECLOTH',
+			'ORANGE JUICE',
+			'MINI PRINGLES',
+			'THEMATIC STICKERS',
+			'CARD WITH MESSAGE PERSONALIZED',
+		],
 		categoria: 'Kids',
 	},
 	{
@@ -310,22 +269,16 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/BREAKFAST%20SPECIAL.jpg?alt=media&token=1e308c3e-32b4-47fb-b557-808c39bd031d',
-		descripcion: `TARJETA PERSONALIZADA
-      GLOBO DE PERSONAJE FAVORITO
-      
-      SANDUCHE DE JAMON Y QUESO O
-      
-      WAFFLES
-      
-      YOGURT CON CEREAL
-      
-      PONQUESITOS X 3
-      
-      VASO ANIMADO
-      
-      CHIPS
-      
-      NESQUIK`,
+		descripcion: [
+			'PERSONALIZED CARD',
+			'FAVORITE CHARACTER BALLOON',
+			'HAM AND CHEESE SANDWICH OR WAFFLES',
+			'YOGURT WITH CEREAL',
+			'CUPCAKES X 3',
+			'ANIMATED GLASS',
+			'CHIPS',
+			'NESQUIK',
+		],
 		categoria: 'Kids',
 	},
 	{
@@ -334,22 +287,15 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20SWEET%20BIRTHDAY.jpg?alt=media&token=197c1f35-b136-4369-900b-fe4c1abc13fc',
-		descripcion: `BANDEJA DE MADERA O CRYSTAL
-      CANASTA CON CHOCOLATES
-      
-      FRESAS CUBIERTAS CON
-      
-      CHOCOLATE CAFÉ O BLANCO
-      
-      CAJITA CON ROSAS X 8
-      
-      ARCOIRIS DE GLOBOS
-      
-      TORTA PERSONALIZADA
-      
-      (PERSONAJE FAVORITO)
-      
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'WOODEN OR GLASS TRAY',
+			'BASKET WITH CHOCOLATES',
+			'STRAWBERRIES COVERED WITHCOFFEE OR WHITE CHOCOLATE',
+			'BOX WITH ROSES X 8',
+			'RAINBOW BALLOONS',
+			'CUSTOM CAKE',
+			'(FAVORITE CHARACTER) PERSONALIZED CARD',
+		],
 		categoria: 'Kids',
 	},
 	{
@@ -358,18 +304,15 @@ const desayunos = [
 		precio: 69.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PICNIC%20BIRTHDAY.jpg?alt=media&token=6f7e9c89-8d61-4457-8f88-faa4c90bc472',
-		descripcion: `JUGO DE NARANJA
-      YOGURT CON CEREAL
-      
-      RITZ CRACKERS GALLETAS
-      
-      CAJA DECORADA CON MENSAJE
-      
-      2 WRAP CON JAMÓN Y LECHUGA
-      
-      CAJA DE FRUTAS: UVAS Y FRESAS
-      
-      MANTEL Y GLOBO METÁLICO CON MENSAJE`,
+		descripcion: [
+			'ORANGE JUICE',
+			'YOGURT WITH CEREAL',
+			'RITZ CRACKERS BISCUITS',
+			'DECORATED BOX WITH MESSAGE',
+			'2 WRAP WITH HAM AND LETTUCE',
+			'FRUIT BOX: GRAPES AND STRAWBERRIES',
+			'TABLECLOTH AND METALLIC BALLOON WITH MESSAGE',
+		],
 		categoria: 'Picnic-Box-Express',
 	},
 	{
@@ -378,20 +321,16 @@ const desayunos = [
 		precio: 69.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/EXPRESS%20PICNIC.jpg?alt=media&token=6adf3b1a-dbd1-4310-9ddb-e759942ddb29',
-		descripcion: `MINI BROWNIES
-      JUGO DE NARANJA
-      
-      SALSA DE LA CASA
-      
-      CROISSANT DE JAMÓN Y QUESO CON LECHUGA
-      
-      ALMENTRA O MANÍ EN EMPAQUE
-      
-      FRASCO CON FRUTAS
-      
-      CAJITA DE CARTÓN CON 3 GLOBOS
-      
-      MANTEL Y TARJETA PERSONALIZADA`,
+		descripcion: [
+			'MINI BROWNIES',
+			'ORANGE JUICE',
+			'HOUSE SAUCE',
+			'HAM AND CHEESE CROISSANT WITH LETTUCE',
+			'ALMENTA OR PEANUTS IN PACKAGING',
+			'JAR WITH FRUITS',
+			'LITTLE CARDBOARD BOX WITH 3 BALLOONS',
+			'TABLECLOTH AND PERSONALIZED CARD',
+		],
 		categoria: 'Picnic-Box-Express',
 	},
 	{
@@ -400,20 +339,20 @@ const desayunos = [
 		precio: 149.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/LUXURY%20PICNIC.jpg?alt=media&token=089480ae-d6d2-4345-a370-d954fae54bc7',
-		descripcion: `CAJA DE MADERA PERSONALIZADA CON EL NOMBRE
-      SANDUCHE DE JAMÓN Y QUESO LECHUGA Y
-      
-      TOMATE, SALSA DE LA CASA.
-      TABLA DE QUESOS CHARCUTERIA
-      SALAMI, QUESO Y JAMÓN
-      BOWL DE FRUTAS
-      JUGO DE NARANJA
-      STARBUCKS CAFÉ
-      CHOCOLATES FERRERO X3
-      BOTELLA DE VINO O CHAMPAGNE
-      COPA DE VINO MARCA
-      TARJETA PERSONALIZADA
-      GLOBO BURBUJA`,
+		descripcion: [
+			'WOODEN BOX PERSONALIZED WITH THE NAME',
+			'HAM AND CHEESE SANDWICH LETTUCE AND TOMATO, HOUSE SAUCE.',
+			'CHARCUTERIA CHEESE PLATE',
+			'SALAMI, CHEESE AND HAM',
+			'FRUIT BOWL',
+			'ORANGE JUICE',
+			'STARBUCKS COFFEE',
+			'FERRERO CHOCOLATES X3',
+			'BOTTLE OF WINE OR CHAMPAGNE',
+			'GLASS OF WINE BRAND',
+			'PERSONALIZED CARD',
+			'BUBBLE BALLOON',
+		],
 		categoria: 'Picnic-Box-Express',
 	},
 	{
@@ -422,44 +361,40 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/FITNESS%20BOX%201.jpg?alt=media&token=9109667b-41a0-44ec-9c75-4b5a4316f435',
-		descripcion: `JUGO VERDE (MANZANA, MANGO, BRÓCOLI, ESPINACA, GINGER, PIÑA,
-          KIWI)
-          JUGO DE NARANJA NATURAL
-          SÁNDWICH (PAN INTEGRAL, JAMÓN DE PAVO, QUESO, MIX DE
-          LECHUGAS, TOMATE)
-          BOWL YOGURT GRIEGO, SEMILLAS DE CHIA, FRESAS, KIWI, GRANOLA
-          BARRA DE PROTEINA POWER CRUSH
-          MUFFIN INTEGRAL
-          FRUTOS SECOS
-          BARRA DE CACAO BAJA EN AZÚCAR
-          CUBIERTOS
-          CAJA DE MADERA Y LETRERO
-          SUCULENTA
-          TARJETA
-          GLOBOS`,
+		descripcion: [
+			'GREEN JUICE (APPLE, MANGO, BROCCOLI, SPINACH, GINGER, PINEAPPLE,KIWI)',
+			'NATURAL ORANGE JUICE',
+			'SANDWICH (INTEGRAL BREAD, TURKEY HAM, CHEESE, MIX OF LETTUCE, TOMATO)',
+			'GREEK YOGURT BOWL, CHIA SEEDS, STRAWBERRIES, KIWI, GRANOLA',
+			'POWER CRUSH PROTEIN BAR',
+			'WHOLE MUFFIN',
+			'NUTS',
+			'LOW SUGAR COCOA BAR',
+			'CUTLERY',
+			'WOODEN BOX AND SIGN',
+			'SUCCULENT',
+			'CARD',
+			'BALLOONS',
+		],
 		categoria: 'Picnic-Box-Express',
 	},
 	{
 		id: 20,
 		titulo: `HAPPY FATHER'S DAY
-      BOX EXPRESS`,
+       BOX EXPRESS`,
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/HAPPY%20FATHER_S%20DAY%20-%20BOX%20EXPRESS.jpg?alt=media&token=44f55c2d-3927-4476-9b97-bdd368c025fa',
-		descripcion: `PIROULINE BARQUILLOS
-      CAJA DE MADERA MEDIANA
-      
-      YOGURT CON CEREAL
-      
-      3 GLOBOS PEQUEÑOS, 1 GRANDE
-      
-      SANDUCHE DE JAMON Y QUESO
-      
-      CERVEZA X 1
-      
-      PLANTA DECORATIVA
-      
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'PIROULINE WAFERS',
+			'MEDIUM WOODEN BOX',
+			'YOGURT WITH CEREAL',
+			'3 SMALL BALLOONS, 1 LARGE',
+			'HAM AND CHEESE SANDWICH',
+			'BEER X 1',
+			'DECORATIVE PLANT',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Special-Fathers-Day',
 	},
 	{
@@ -468,19 +403,18 @@ const desayunos = [
 		precio: 129.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/SWEET%20TRAY%20HAPPY%20FATHER_S%20DAY.jpg?alt=media&token=6f6d797b-6c16-41e7-bdc3-e38ac90df236',
-		descripcion: `BANDEJA DE DESAYUNO DECORADA CON 3
-      GLOBOS
-      1 ARREGLO FLORAL SENCILLO
-      BOTELLA DE JP CHENET
-      SANDUCHE DE JAMON Y QUESO
-      ENVASE DE CEREAL, ENVASE DE YOGURT
-      MINI BEROWNIE
-      CAJITA CON MANGO, HATSU TE
-      PAPAS PRINGLES (175GR)
-      MANÍ, M&M CHOCOLATES
-      TARJETA PERSONALIZADA DEL DÍA DEL
-      
-      PADRE`,
+		descripcion: [
+			'DECORATED BREAKFAST TRAY WITH 3 BALLOONS',
+			'1 SIMPLE FLORAL ARRANGEMENT',
+			'JP CHENET BOTTLE',
+			'HAM AND CHEESE SANDWICH',
+			'CEREAL CONTAINER, YOGURT CONTAINER',
+			'MINI BEOWNIE',
+			'BOX WITH HANDLE, HATSU TE',
+			'PRINGLE POTATOES (175GR)',
+			'PEANUTS, M&M CHOCOLATES',
+			'PERSONALIZED CARD OF THE DAY OF DAD',
+		],
 		categoria: 'Special-Fathers-Day',
 	},
 	{
@@ -489,19 +423,19 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/MINI%20BEST%20DAD.jpg?alt=media&token=113e451b-b21f-4645-858d-75ff2929519a',
-		descripcion: `CAJA DECORATIVA
-      GLOBOS LÁTEX
-      GLOBOS CON HELIO
-      SÁNDWICH CLUB (JAMÓN, QUESO, MIX DE
-      LECHUGAS, TOMATE, SALSA RANCH) GRANOLA,
-      FRESAS, ARÁNDANOS, YOGURT)
-      CHOCOLATES FERRERO
-      GALLETAS
-      JUGO DE NARANJA
-      DOS CORONITAS
-      CAFÉ FRÍO STARBUCKS
-      CUBIERTOS
-      TARJETA`,
+		descripcion: [
+			'DECORATIVE BOX',
+			'LATEX BALLOONS',
+			'BALLOONS WITH HELIUM',
+			'CLUB SANDWICH (HAM, CHEESE, MIX OF LETTUCE, TOMATO, RANCH SAUCE, GRANOLA, STRAWBERRIES, BLUEBERRIES, YOGURT)',
+			'FERRERO CHOCOLATES',
+			'BISCUITS',
+			'ORANGE JUICE',
+			'TWO CROWNS',
+			'STARBUCKS COLD COFFEE',
+			'CUTLERY',
+			'CARD',
+		],
 		categoria: 'Special-Fathers-Day',
 	},
 	{
@@ -510,30 +444,20 @@ const desayunos = [
 		precio: 79.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/EXPRESS%20NEWS%20DAD%201.jpg?alt=media&token=59151edd-6fa0-43cf-9b56-94ccd5062e9e',
-		descripcion: `CAJA DE CARTÓN NOTICIAS
-      2 SANDWICH CLUB ( JAMÓN, QUESO, MIX DE
-      
-      LECHUGAS, TOMATE)
-      
-      WAFFLES CON FRESAS Y ARÁNDANOS
-      
-      (YOGURT, FRESAS Y ARÁNDANOS)
-      
-      SYRUP
-      
-      NUTELLA
-      
-      CHOCOLATES FERRERO
-      
-      GALLETAS CHOCOLATE CHIPS
-      
-      3 MINI CUPCAKES
-      
-      JUGO DE NARANJA
-      
-      QUESO TAJADO Y PROCIUTTO
-      
-      TARJETA`,
+		descripcion: [
+			'CARTON BOX NEWS',
+			'2 CLUB SANDWICH (HAM, CHEESE, MIX OF LETTUCE, TOMATO)',
+			'WAFFLES WITH STRAWBERRIES AND BLUEBERRIES',
+			'(YOGURT, STRAWBERRIES AND BLUEBERRIES)',
+			'SYRUP',
+			'NUTELLA',
+			'FERRERO CHOCOLATES',
+			'CHOCOLATE CHIPS BISCUITS',
+			'3 MINI CUPCAKES',
+			'ORANGE JUICE',
+			'SLICED CHEESE AND PROCIUTTO',
+			'CARD',
+		],
 		categoria: 'Special-Fathers-Day',
 	},
 	{
@@ -542,32 +466,21 @@ const desayunos = [
 		precio: 159.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUN%20BEST%20DAD.jpg?alt=media&token=95066828-a5db-4e0e-a07f-8bbdd4dc1f1f',
-		descripcion: `BANDEJA DE MADERA
-      GLOBOS HELIO X4
-      
-      ARCO DE GLOBOS
-      
-      MINI CAKE CON MINI LICOR
-      
-      PARFAIT (CEREAL, YOGURT, FRESAS)
-      
-      2 SÁNDWICH (JAMÓN, QUESO, MIX DE
-      
-      LECHUGAS,TOMATE)
-      
-      CHOCOLATES FERRERO X3
-      
-      JUGO DE NARANJA
-      
-      VASO CERVECERO MARCADO
-      
-      2 CERVEZAS CORONA
-      
-      1 MINI CHAMPAGNE
-      
-      CAFÉ STARBUCKS
-      
-      TARJETA`,
+		descripcion: [
+			'WOODEN TRAY',
+			'HELIUM BALLOONS X4',
+			'BOW OF BALLOONS',
+			'MINI CAKE WITH MINI LIQUOR',
+			'PARFAIT (CEREAL, YOGURT, STRAWBERRIES)',
+			'2 SANDWICH (HAM, CHEESE, MIX OF LETTUCE, TOMATO)',
+			'FERRERO CHOCOLATES X3',
+			'ORANGE JUICE',
+			'MARKED BEER GLASS',
+			'2 CORONA BEERS',
+			'1 MINI CHAMPAGNE',
+			'STARBUCKS COFFEE',
+			'CARD',
+		],
 		categoria: 'Special-Fathers-Day',
 	},
 	{
@@ -576,28 +489,20 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/PREMIUM%20BEST%20MOM.jpg?alt=media&token=e605db88-ec8a-4357-a0c9-0da83acafb14',
-		descripcion: `BANDEJA DE MADERA CON ARCO
-      BOUQUET DE FLORES
-      
-      MANTEL
-      
-      JUGO DE NARANJA
-      
-      CAFÉ STARBUCKS
-      
-      BOWL CON FRUTAS
-      
-      CEREAL
-      
-      YOGURT
-      
-      SANDWICH CLÁSICO O WAFFLES.
-      
-      ARCO DE GLOBOS
-      
-      MUGS PERSONALIZADO
-      
-      TARJETA CON MENSAJE PERSONALIZADA`,
+		descripcion: [
+			'WOODEN TRAY WITH ARCH',
+			'FLOWER BOUQUET',
+			'TABLECLOTH',
+			'ORANGE JUICE',
+			'STARBUCKS COFFEE',
+			'BOWL WITH FRUITS',
+			'CEREAL',
+			'YOGURT',
+			'CLASSIC SANDWICH OR WAFFLES.',
+			'ARCH OF BALLOONS',
+			'CUSTOM MUGS',
+			'CARD WITH PERSONALIZED MESSAGE',
+		],
 		categoria: 'Special-Mothers-Day',
 	},
 	{
@@ -606,24 +511,17 @@ const desayunos = [
 		precio: 139.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/DELUXE%20BEST%20MOM.jpg?alt=media&token=ca8f6345-ad10-461f-b574-8d86107cb4ff',
-		descripcion: `CAJA DE MADERA CON FLORES
-      MANTEL
-      
-      JUGO DE NARANJA
-      
-      VASO CRISTAL CON FRUTAS
-      
-      GALLETAS DE CEREAL
-      
-      YOGURT CON GRANOLA
-      
-      SANDWICH CLÁSICO
-      
-      O WAFFLES.
-      
-      2 GLOBOS CON HELIO
-      
-      TARJETA CON MENSAJE PERSONALIZADA`,
+		descripcion: [
+			'WOODEN BOX WITH FLOWERS',
+			'TABLECLOTH',
+			'ORANGE JUICE',
+			'GLASS GLASS WITH FRUITS',
+			'CEREAL BISCUITS',
+			'YOGURT WITH GRANOLA',
+			'CLASSIC SANDWICH OR WAFFLES.',
+			'2 BALLOONS WITH HELIUM',
+			'CARD WITH PERSONALIZED MESSAGE',
+		],
 		categoria: 'Special-Mothers-Day',
 	},
 	{
@@ -632,24 +530,17 @@ const desayunos = [
 		precio: 79.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/MINI%20SWEET%20MOM%201.jpg?alt=media&token=ab68b4e3-67eb-4e08-8814-78c5015934df',
-		descripcion: `CAJA DE MADERA MARCADA
-      SÁNDWICH CLUB(JAMÓN,QUESO,TOMATE,MIX DE
-      
-      LECHUGAS, SALSA RANCH, QUESO PARMESANO)
-      
-      YOGURT, FRESAS, GRANOLA
-      
-      JUGO DE NARANJA
-      
-      CHOCOLATES FERRERO
-      
-      CUBIERTOS
-      
-      ARCO DE GLOBOS CON MARIPOSA
-      
-      MINI BOUQUET DE FLORES
-      
-      TARJETA`,
+		descripcion: [
+			'MARKED WOODEN BOX',
+			'CLUB SANDWICH (HAM, CHEESE, TOMATO, MIX OF LETTUCE, RANCH SAUCE, PARMESAN CHEESE)',
+			'YOGURT, STRAWBERRIES, GRANOLA',
+			'ORANGE JUICE',
+			'FERRERO CHOCOLATES',
+			'CUTLERY',
+			'BALLOON ARCH WITH BUTTERFLY',
+			'MINI BOUQUET OF FLOWERS',
+			'CARD',
+		],
 		categoria: 'Special-Mothers-Day',
 	},
 	{
@@ -658,26 +549,18 @@ const desayunos = [
 		precio: 89.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/MINI%20SAN%20VALENTINE.jpg?alt=media&token=40a10209-2c93-4ae3-8d76-fc5118b7b551',
-		descripcion: `CAJA DE MADERA MARCADA
-      ARCO DE GLOBOS
-      
-      2 SÁNDWICH CLUB
-      
-      (JAMÓN,QUESO,TOMATE,MIX DE LECHUGAS,
-      
-      SALSA RANCH, QUESO PARMESANO)
-      
-      PARFAIT (YOGURT, FRESAS, GRANOLA)
-      
-      JUGO DE NARANJA
-      
-      CAJA DE PIROULINE
-      
-      CHOCOLATES FERRERO X 6
-      
-      CUBIERTOS
-      
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'MARKED WOODEN BOX',
+			'ARCH OF BALLOONS',
+			'2 CLUB SANDWICH',
+			'(HAM, CHEESE, TOMATO, MIX OF LETTUCE, RANCH SAUCE, PARMESAN CHEESE)',
+			'PARFAIT (YOGURT, STRAWBERRIES, GRANOLA)',
+			'ORANGE JUICE',
+			'PIROULINE BOX',
+			'FERRERO CHOCOLATE X 6',
+			'CUTLERY',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Special-Valentines-Day',
 	},
 	{
@@ -686,29 +569,23 @@ const desayunos = [
 		precio: 149.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/LUXURY%20MY%20VALENTÍNE%201.jpg?alt=media&token=31a21e03-3742-4673-8eb4-efef37f21b93',
-		descripcion: `BANDEJA DE MADERA NEGRA O BLANCA
-      GLOBOS HELIO X6
-      PONQUÉ CON MENSAJE
-      
-      PARFAIT (CEREAL, YOGURT, FRESAS)
-      2 SÁNDWICH (JAMÓN, QUESO, MIX DE
-      LECHUGAS,TOMATE) O WAFFLES CON
-      
-      NUTELLA
-      
-      CHOCOLATES FERRERO X3
-      JUGO DE NARANJA
-      FRUTOS SECOS
-      CAJA DE PIROULINO
-      
-      CUBIERTOS
-      
-      COPA DE VINO MARCADA
-      
-      MINI CHAMPAGNE
-      3 CERVEZAS CORONA
-      CAFÉ STARBUCKS
-      TARJETA PERSONALIZADA`,
+		descripcion: [
+			'BLACK OR WHITE WOODEN TRAY',
+			'HELIUM BALLOONS X6',
+			'PUT WITH MESSAGE',
+			'PARFAIT (CEREAL, YOGURT, STRAWBERRIES)',
+			'2 SANDWICH (HAM, CHEESE, MIX OF LETTUCE, TOMATO) OR WAFFLES WITH NUTELLA',
+			'FERRERO CHOCOLATES X3',
+			'ORANGE JUICE',
+			'NUTS',
+			'PIROULINO BOX',
+			'CUTLERY',
+			'MARKED WINE GLASS',
+			'MINI CHAMPAGNE',
+			'3 CORONA BEERS',
+			'STARBUCKS COFFEE',
+			'PERSONALIZED CARD',
+		],
 		categoria: 'Special-Valentines-Day',
 	},
 	{
@@ -717,28 +594,17 @@ const desayunos = [
 		precio: 69.99,
 		imagen:
 			'https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/MY%20VALENTÍNE%20MINI%20BOX.jpg?alt=media&token=d4ad8bf7-b913-4b05-8374-84e6fff6738d',
-		descripcion: `CAJA MARCADA
-      CON MENSAJE ESPECIAL
-      
-      2 SÁNDWICH CLUB
-      
-      (JAMÓN,QUESO,TOMATE,MIX DE LECHUGAS,
-      
-      SALSA RANCH, QUESO PARMESANO)
-      
-      PARFAIT (YOGURT, FRESAS, GRANOLA)
-      
-      JUGO DE NARANJA
-      
-      CAJA DE M&M
-      
-      GALLETAS CON CHIPS
-      
-      CUBIERTOS
-      
-      TARJETA PERSONALIZADA
-      
-      GLOBOS HELIO X2`,
+		descripcion: [
+			'MARKED BOX WITH SPECIAL MESSAGE',
+			'2 CLUB SANDWICH (HAM, CHEESE, TOMATO, MIX OF LETTUCE, RANCH SAUCE, PARMESAN CHEESE)',
+			'PARFAIT (YOGURT, STRAWBERRIES, GRANOLA)',
+			'ORANGE JUICE',
+			'M&M BOX',
+			'COOKIES WITH CHIPS',
+			'CUTLERY',
+			'PERSONALIZED CARD',
+			'HELIUM BALLOONS X2',
+		],
 		categoria: 'Special-Valentines-Day',
 	},
 ];
