@@ -4,7 +4,7 @@ import '../../index.css';
 
 function NavBar() {
 	return (
-		<Navbar fluid={true} rounded={true}>
+		<Navbar fluid={true} rounded={true} className='sticky top-0 z-50'>
 			<Navbar.Brand>
 				<img
 					src='https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/logo%2FLOGO%20PRINCIPAL.png?alt=media&token=398018ef-a6aa-49bc-9dd2-e93183b9c0a5'
@@ -66,13 +66,13 @@ function NavBar() {
 				</a>
 				<Navbar.Toggle />
 			</div>
-			<Navbar.Collapse>
+			<Navbar.Collapse style={{ textAlign: 'center', alignSelf: 'center', width: '500px' }}>
 				<Navbar.Link href='#surpriceBreakfast'>SURPRISE BREAKFAST</Navbar.Link>
 				<Navbar.Link href='#bouquets'>
 					FLOWER BOUQUETS AND CHOCOLATES
 				</Navbar.Link>
-				<Navbar.Link href='#action2'>CORPORATE AND EVENTS</Navbar.Link>
-				<Navbar.Link href='#' disabled>
+				<Navbar.Link href='#corporate'>CORPORATE AND EVENTS</Navbar.Link>
+				<Navbar.Link href='#onUs'>
 					ON US
 				</Navbar.Link>
 			</Navbar.Collapse>
