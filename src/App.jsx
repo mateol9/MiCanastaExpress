@@ -10,12 +10,14 @@ import Cards from './components/Card/Cards';
 import desayunos from './utils/DesayunosMocks.js';
 import bouquetes from './utils/BouquetesMocks.js';
 import corporativos from './utils/CorporativosMocks.js';
+import WhatsappBtn from './components/WhatsappBtn/WhatsappBtn';
 
 function App() {
 	return (
 		<div className='App'>
 			<BrowserRouter>
 				<NavBar />
+				<WhatsappBtn />
 				<Routes>
 					<Route
 						path='/'
@@ -30,9 +32,11 @@ function App() {
 									BOUQUETS OF FLOWERS AND CHOCOLATES
 								</h2>
 								<Cards products={bouquetes} />
-								<h2 className='titleBouquetes' id='corporate'>CORPORATE AND EVENTS</h2>
+								<h2 className='titleBouquetes' id='corporate'>
+									CORPORATE AND EVENTS
+								</h2>
 								<Cards products={corporativos} />
-								<Us id='onUs'/>
+								<Us id='onUs' />
 								<PayMethods />
 								<Subscribe />
 							</>

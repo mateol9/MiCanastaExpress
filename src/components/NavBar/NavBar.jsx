@@ -1,10 +1,12 @@
 import { Navbar } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 import '../../index.css';
 
 function NavBar() {
 	return (
-		<Navbar fluid={true} rounded={true} className='sticky top-0 z-50'>
+		<Navbar fluid={true} rounded={true} className='sticky top-0 z-50 md:mb-10'>
+			<Link to={'/'}>
 			<Navbar.Brand>
 				<img
 					src='https://firebasestorage.googleapis.com/v0/b/micanastaexpress-23ff9.appspot.com/o/logo%2FLOGO%20PRINCIPAL.png?alt=media&token=398018ef-a6aa-49bc-9dd2-e93183b9c0a5'
@@ -12,6 +14,7 @@ function NavBar() {
 					alt='Flowbite Logo'
 				/>
 			</Navbar.Brand>
+			</Link>
 			<div className='flex md:order-2'>
 				<a
 					href='https://www.facebook.com/profile.php?id=100083066395537'
